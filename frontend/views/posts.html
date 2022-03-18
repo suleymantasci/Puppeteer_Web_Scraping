@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">ElmaElmaApi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="index.html">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="javascript: history.go(-1)">Geri</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Resim</th>
+                <th scope="col">Başlık</th>
+                <th scope="col">link</th>
+              </tr>
+            </thead>
+            <tbody id="posts">
+            </tbody>
+          </table>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-between">
+              <li class="page-item">
+                <button class="page-link" id="prev-btn">Previous</button>
+              </li>
+              <li class="page-item">
+                <button class="page-link" id="next-btn">Next</button>
+              </li>
+            </ul>
+          </nav>
+    </div>
+</body>
+
+<script src="../scripts/posts.js"></script>
+</html>
